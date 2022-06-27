@@ -1,0 +1,76 @@
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 4.5rem 10rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background:   url("./images/bg-intro-desktop.png"), hsl(0, 100%, 74%);
+}
+
+form {
+    margin: 1.5rem 0;
+    padding: 2.25rem;
+    color: hsl(246, 25%, 77%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+form > button {
+    background: hsl(154, 59%, 51%)
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.25rem 2rem;
+    margin-bottom: 1.25rem;
+    border-radius: 10px;
+    background-color: none;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+section {
+    width: 45%;
+    height: 100%;
+}
+
+section > button {
+    background: hsl(248, 32%, 49%);
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    text-align: center;
+  }
+
+  section {
+    width: 100%;
+  }
+}
